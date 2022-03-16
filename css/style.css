@@ -1,0 +1,117 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(233, 47%, 7%);
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+.container {
+    background-color: hsl(233, 47%, 7%);
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .cont {
+    display: flex;
+    height: 55%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+@media (max-width: 768px) {
+    .container .cont {
+        flex-direction: column;
+        height: auto;
+    }
+}
+.container .cont .info {
+    color: hsla(0, 0%, 100%, 0.95);
+    background-color: hsl(244, 38%, 16%);
+    padding: 50px 93px 0 70px;
+    flex: 1;
+}
+@media (max-width: 768px) {
+    .container .cont .info {
+        gap: 20px;
+        flex-direction: column;
+        text-align: center;
+        order: 2;
+        padding: 0px 35px;  
+    }
+}
+.container .cont .info h1 {
+    font-size: 2.3em;
+}
+.container .cont .info span {
+    color: hsl(277, 64%, 61%);
+}
+.container .cont .info p {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-weight: 100;
+}
+.container .cont .info .numbers {
+    display: flex;
+    margin: 85px auto 0 auto;
+    gap: 70px;
+    
+}
+@media (max-width: 768px) {
+    .container .cont .info .numbers {
+        gap: 20px;
+        margin: 35px auto 48px auto;
+        flex-direction: column;
+    }
+}
+.container .cont .info .numbers .num  .head p {
+    color: white;
+    font-weight: 900;
+    font-size: 26px;
+    margin: 0;
+}
+.container .cont .info .numbers .num  .body p {
+    margin: 5px 0 0 0;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+}
+.container .cont .image {
+    position: relative;
+}
+@media (max-width: 768px) {
+    .container .cont .image {
+        order: 1;
+    }
+}
+.container .cont .image img {
+    max-width: 100%;
+}
+.container .cont .image::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(277deg 64% 35% / 60%);
+    left: 0;
+}
